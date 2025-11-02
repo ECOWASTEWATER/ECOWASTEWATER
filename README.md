@@ -103,11 +103,10 @@ Package Main berfungsi sebagai pusat logika, yaitu tempat menyimpan semua class 
 
 ## Flowchart & Use Case
 
-Berikut adalah link Flowchart dan Use case diagram 
+## Flowchart
 
-Flowchart : https://app.diagrams.net/#G1wKB05q0JbQ4xsn0khmI7zLCrlHOijzv4#%7B%22pageId%22%3A%2280WTy4hSo2W5AGeVKFtQ%22%7D
+## Use Case
 
-Use case : https://app.diagrams.net/#G1zMjbFOPNwCFiWQZRNhJr3RCdtqx2eVic#%7B%22pageId%22%3A%22AUcS-lJaB4qKYF_lkGg9%22%7D
 
 
 ## grapgical User Interface (GUI)
