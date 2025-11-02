@@ -2,7 +2,7 @@
 
 Platfrom sanitasi ini digunakan untuk mempermudah masyarakat dalam melaporkan permasalahan air limbah langsung ke pihak terkait, dan juga dapat membantu masyarakat memahami pentingnya menjaga sanitasi melalui action, laporan dapat dibuat dengan cepat dan tepat, serta melalui community yang memperkuat kerja sama antara masyarakat dan instansi agar penanganan air limbah lebih efektif dan lingkungan tetap terjaga.
 
-### EcowasteWater
+** EcowasteWater 
 EcowasteWater merupakan patform yang berfungsi sebagai sistem digital untuk mempermudah pengelolaan sanitasi dan air limbah melalui pemantauan, pelaporan, dan penyimpanan data secara terpusat. Melalui platform ini, masyarakat dapat melaporkan permasalahan terkait fasilitas sanitasi atau air limbah dengan cepat, sementara pihak pengelola dapat langsung menerima laporan, memverifikasi kondisi di lapangan, dan menindaklanjutinya sesuai prioritas. Sistem ini juga menyimpan data inspeksi, kondisi instalasi, dan riwayat perawatan secara otomatis, sehingga proses evaluasi dan pengambilan keputusan menjadi lebih akurat dan efisien.
 
 ## Fitur
@@ -100,6 +100,7 @@ Berikut adalah link Flowchart dan Use case diagram
 Flowchart : https://app.diagrams.net/#G1wKB05q0JbQ4xsn0khmI7zLCrlHOijzv4#%7B%22pageId%22%3A%2280WTy4hSo2W5AGeVKFtQ%22%7D
 
 Use case : https://app.diagrams.net/#G1zMjbFOPNwCFiWQZRNhJr3RCdtqx2eVic#%7B%22pageId%22%3A%22AUcS-lJaB4qKYF_lkGg9%22%7D
+
 
 ## grapgical User Interface (GUI)
 
