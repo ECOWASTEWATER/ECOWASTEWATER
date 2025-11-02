@@ -14,17 +14,25 @@ Object Oriented Programming (OOP) merupakan fondasi dalam pengembangan aplikasi 
 ### Encapsulation
 Encapsulation merupakan konsep dalam Object Oriented Programming (OOP) yang bertujuan untuk menggabungkan data dengan fungsi yang mengelolanya dalam satu kesatuan (Class), serta membatasi akses langsung ke data tersebut. Dengan cara ini, data menjadi lebih terkontrol dan terproteksi karena hanya dapat diakses melalui method yang telah disediakan.
 
+<img width="960" height="713" alt="image" src="https://github.com/user-attachments/assets/bb0082b4-bad7-468b-a6f9-a0e136e0b14c" />
+
+Atribut disembunyikan agar lebih aman dibanding public, karena hanya kelas turunannya yang bisa mengakses, dan data tidak bisa diubah langsung dari luar kelas, tetapi harus melalui method tersebut.
 
 ### Abstraction
 berfokus pada penyederhanaan kompleksitas dengan hanya menampilkan bagian penting dari suatu objek dan menyembunyikan detail yang tidak diperlukan. Dengan abstraction, jadi hanya memberikan informasi atau fungsi yang relevan untuk digunakan.
+
+<img width="939" height="291" alt="image" src="https://github.com/user-attachments/assets/a200ca8e-2bc0-427e-a6e2-dc1b35bb3bb6" />
 
 
 ### Inheritance
 Inheritance merupakan konsep yang memungkinkan suatu class mewarisi sifat (atribut) dan perilaku (method) dari class lain. Class yang mewarisi disebut subclass, sedangkan class yang memberikan warisan disebut parent superclass. Dengan inheritance, maka tidak perlu menulis ulang kode yang sama, karena subclass dapat menggunakan atau mengembangkan fitur yang sudah ada pada superclass.
 
+<img width="1142" height="310" alt="image" src="https://github.com/user-attachments/assets/9b0c183a-4edc-4db9-a7ca-0e55e4bba50b" />
+
 
 ### Polymorphism
 Polymorphism adalah konsep yang memungkinkan satu nama method digunakan oleh beberapa class dengan cara atau hasil yang berbeda. Dengan adanya polymorphism, objek yang berbeda dapat merespons atau menjalankan perintah yang sama, tetapi dengan cara yang sesuai dengan karakteristik masing-masing.
+
 
 
 ### Interface 
