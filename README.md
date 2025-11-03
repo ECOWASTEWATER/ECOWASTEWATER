@@ -120,6 +120,26 @@ Package Main berfungsi sebagai pusat logika, yaitu tempat menyimpan semua class 
 <img width="4645" height="2872" alt="Keseluruhan drawio" src="https://github.com/user-attachments/assets/64582bed-fe5e-422e-978a-70c434e2dd17" />
 
 
+### Logiin
+<img width="687" height="1197" alt="Login drawio" src="https://github.com/user-attachments/assets/2ece9671-e149-46f7-b633-dcf7bbb0a996" />
+
+
+### Registrasi
+<img width="252" height="1503" alt="Regis drawio" src="https://github.com/user-attachments/assets/dd30bafe-112e-4c76-b07d-43172b8a14df" />
+
+
+### Petugas
+<img width="888" height="1045" alt="Petugas drawio" src="https://github.com/user-attachments/assets/5eac6815-54cc-4865-8c56-3c96a1125824" />
+
+
+### Masyarakat
+<img width="990" height="1242" alt="Masyarakat drawio" src="https://github.com/user-attachments/assets/bff1554d-7a48-49b1-9142-fe8e77d88f2a" />
+
+
+### Admin
+<img width="1030" height="1838" alt="Admin drawio" src="https://github.com/user-attachments/assets/760e7434-0400-49cc-9364-262327a8dac9" />
+
+
 ### Use Case
 
 
