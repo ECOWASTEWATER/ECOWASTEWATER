@@ -12,32 +12,44 @@ Object Oriented Programming (OOP) merupakan fondasi dalam pengembangan aplikasi 
 
 
 ### Encapsulation
-Encapsulation merupakan konsep dalam Object Oriented Programming (OOP) yang bertujuan untuk menggabungkan data dengan fungsi yang mengelolanya dalam satu kesatuan (Class), serta membatasi akses langsung ke data tersebut. Dengan cara ini, data menjadi lebih terkontrol dan terproteksi karena hanya dapat diakses melalui method yang telah disediakan.
 
-<img width="960" height="713" alt="image" src="https://github.com/user-attachments/assets/bb0082b4-bad7-468b-a6f9-a0e136e0b14c" />
+<img width="972" height="156" alt="image" src="https://github.com/user-attachments/assets/a15650aa-4501-40b2-b165-2312896f2de8" />
 
-Atribut disembunyikan agar lebih aman dibanding public, karena hanya kelas turunannya yang bisa mengakses, dan data tidak bisa diubah langsung dari luar kelas, tetapi harus melalui method tersebut.
+<img width="902" height="222" alt="image" src="https://github.com/user-attachments/assets/6626ae4e-a4e1-4f24-8056-a42d1fdf8a4b" />
+
+<img width="1284" height="503" alt="image" src="https://github.com/user-attachments/assets/cb07e466-b443-4ef7-bc99-f261b639b048" />
+
+Penggunakan Encapsulation pada program agar data penting (seperti assword, id, status laporan) tidak bisa diubah sembarangan dari luar kelas. Data hanya bisa diakses lewat method setter/getter.
+
 
 ### Abstraction
-berfokus pada penyederhanaan kompleksitas dengan hanya menampilkan bagian penting dari suatu objek dan menyembunyikan detail yang tidak diperlukan. Dengan abstraction, jadi hanya memberikan informasi atau fungsi yang relevan untuk digunakan.
 
-<img width="939" height="291" alt="image" src="https://github.com/user-attachments/assets/a200ca8e-2bc0-427e-a6e2-dc1b35bb3bb6" />
+<img width="940" height="339" alt="image" src="https://github.com/user-attachments/assets/c1d72304-f2b9-4a06-836f-fae82dfeb3f9" />
+
+Menyembunyikan detail teknis, hanya menampilkan fungsi yang penting agar sistem lebih mudah dipahami.
 
 
 ### Inheritance
-Inheritance merupakan konsep yang memungkinkan suatu class mewarisi sifat (atribut) dan perilaku (method) dari class lain. Class yang mewarisi disebut subclass, sedangkan class yang memberikan warisan disebut parent superclass. Dengan inheritance, maka tidak perlu menulis ulang kode yang sama, karena subclass dapat menggunakan atau mengembangkan fitur yang sudah ada pada superclass.
 
-<img width="1142" height="310" alt="image" src="https://github.com/user-attachments/assets/9b0c183a-4edc-4db9-a7ca-0e55e4bba50b" />
+Class Admin dan Masyarakat menggunakan keyword extends UserBase, agar dapat menggunakan semua properti dan method dari UserBase tanpa menuliskannya ulang.
+
+<img width="959" height="556" alt="image" src="https://github.com/user-attachments/assets/a296b262-ac2a-4e14-a3a0-8683a60722f2" />
 
 
 ### Polymorphism
-Polymorphism adalah konsep yang memungkinkan satu nama method digunakan oleh beberapa class dengan cara atau hasil yang berbeda. Dengan adanya polymorphism, objek yang berbeda dapat merespons atau menjalankan perintah yang sama, tetapi dengan cara yang sesuai dengan karakteristik masing-masing.
 
+Class menggunakan polymorphism untuk mewarisi (inheritance) dari class induk, menggunakan method yang sama dengan cara kerja berbeda pada setiap kelas turunan.
+
+<img width="974" height="125" alt="image" src="https://github.com/user-attachments/assets/42ea0c20-33a8-4b8f-9359-153da8277403" />
+
+<img width="1004" height="129" alt="image" src="https://github.com/user-attachments/assets/701af4cb-ba93-4903-80fa-cd9878e03ee7" />
 
 
 ### Interface 
-Interface merupakan struktur yang berisi kumpulan method tanpa implementasi (hanya berupa deklarasi). Interface berfungsi sebagai kontrak atau perjanjian yang harus dipatuhi oleh class yang menggunakannya. 
 
+<img width="1117" height="308" alt="image" src="https://github.com/user-attachments/assets/61e8ea46-d232-4c4d-8399-5d384cfed216" />
+
+Digunakan pada class MasyarakatModel melalui deklarasi implements DatabaseOperation<MasyarakatModel> yang berfungsi sebagai kontrak yang menentukan setiap class yang mengimplementasikannya harus memiliki method insert(), update(), softDelete(), dan getAll().
 
 ## Packages
 Packages berfungsi mengelompokkan class dan file-file program lainnya ke dalam satu wadah atau folder tertentu. Dengan adanya package, struktur program menjadi lebih teratur, mudah dikelola, serta menghindari konflik nama class yang sama.
@@ -47,19 +59,19 @@ Packages berfungsi mengelompokkan class dan file-file program lainnya ke dalam s
 ### Icon
 Package icon diguanakn untuk menyimpan file-file ikon atau gambar, dengan adanya package icon, file tidak akan bercampur dengan class java, sehingga struktur project lebih rapi dan terorganisir.
 
-<img width="411" height="514" alt="image" src="https://github.com/user-attachments/assets/61be8624-d6cc-48f3-8144-513142e92e20" />
+<img width="386" height="546" alt="image" src="https://github.com/user-attachments/assets/11b02382-56b6-4ac6-99e8-1d69a958f1f5" />
 
 
 ### Koneksi
 Package koneksi berfungsi untuk tempat mengelola semua file yang berkaitan dengan koneksi ke database. Terdapat dua file yaitu DatabaseConfig.java yang berfungsi untuk menghubungkan aplikasi ke database seperti MySQL. Kemudian ada file TesKoneksi.java yang berfungsi untuk memastikan bahwa database dapat di akses sebelum aplikasi di gunakan.
 
-<img width="416" height="80" alt="image" src="https://github.com/user-attachments/assets/0dd1f51f-342d-427c-8093-02552278d7c7" />
+<img width="380" height="381" alt="image" src="https://github.com/user-attachments/assets/5924e652-60fa-470d-a0d3-0853c4244dac" />
 
 
 ### Main
 Package Main berfungsi sebagai pusat logika, yaitu tempat menyimpan semua class yang terkait dengan proses uatama atau tampilan program.
 
-<img width="408" height="487" alt="image" src="https://github.com/user-attachments/assets/c64d170a-402e-47af-adec-b3bbc249235b" />
+<img width="385" height="517" alt="image" src="https://github.com/user-attachments/assets/e30e2dd8-5ca0-4237-8ad5-b0e1964c4a1b" />
 
 ### File untuk Admin yang di awali huruf "A"
 * A_Edit_Status.java : Form/class untuk admin dalam mengedit status laporan air limbah.
@@ -103,7 +115,9 @@ Package Main berfungsi sebagai pusat logika, yaitu tempat menyimpan semua class 
 
 ## Flowchart & Use Case
 
+
 ## Flowchart
+
 
 ## Use Case
 
@@ -112,60 +126,58 @@ Package Main berfungsi sebagai pusat logika, yaitu tempat menyimpan semua class 
 ## grapgical User Interface (GUI)
 
 ### Halaman Landing Page
-Merupakan halaman utama ketika pertama kali masuk ke platfrom. 
+
 
 ### Halaman Login 
-Merupakan halaman setelah landing page, dengan fitur role, login sebagai admin, petugas, dan masyarakat, serta fitur registrasi untuk masyarakat
+
 
 ## Admin
 
 ### Halaman Wellcome 
-Merupakan halaman setelah login sebagai Admin dengan fitur lihat laporan, dan ada beberapa fitur yang hanya bisa di akses oleh admin seperti hapus laporan, registrasi petugas, ubah status, dan edit data petugas.
 
 ### Halaman Lihat Laporan
-Merupakan halaman ketika admin memilih fitur lihat laporan yang menampilkan seluruh laporan baik yang sudah di tangani dan yang sedang di peroses
+
 
 ### Halaman Hapus laporan
-Merupakan halaman ketika admin memilih fitur hapus laporan yang menampilkan seluruh laporan dan dapat di hapus
+
 
 ### halaman Registrasi Petugas
-Merupakan halaman ketika admin memilih fitur registrasi petugas yang menampilkan dan menginput nama lengkap, username, password, no telepon, dan wilayah penugasan. Jadi akun petugas hanya di registrasikan oleh admin, bukan di petugas.
+
 
 ### Hamana Ubah Status
-Merubahakan halaman ketika admin memilih fitur ubah status yang menampilkan seluruh laporan dan memilih laporan mana yang ingin di ubah ststusnya seperti, sedang di proses atau sudah di tangani.
+
 
 ### Halaman Edit data Petugas
-Merupakan hamana ketika admin memilih fitur edit data petugas yang menampilkan halaman seperti registrasi petugas, dan admin dapat merubah data petugas tertentu.
 
 
 ## Petugas
 
 ### Halaman Wellcome 
-Merupakan haman ketika login sebagai petugas dengan menampilkan fitur lihat laporan, ubah status, dan tindak lanjut.
+
 
 ### Halaman Lihat Laporan
-Merupakan halaman ketika petugas memilih fitur lihat laporan dan menampilkan seluruh laporan baik yang belum di tangani dan sudah di tangani.
+
 
 ### Halaman Ubah Status
-Merupakan halaman ketika petugas memilih fitur uabh status yang menampilkan seluruh laporan dan dapat mengedit status laporan baik belum di tangani dan sudah di tangani
+
 
 ### halaman Tindak lanjut
-Merupakan halaman ketika petugas memilih fitur tindak lanjut yang menampilkan tanggal tindakan, foto, dan keteranga, setelah menangai laporan.
+
 
 
 ## Masyarakat
 
 ### Halaman Registrasi Masyarakat
-Merupakan haman ketika pengguna belum memiliki akun dengan menampilkan inputan nama, username, password, no telepon, dan alamat.
+
 
 ### Halaman Wellcome 
-Merupakan halaman ketika login sebagai masyarkat dengan menampilkan fitur buat laporan, dan lihat laporan.
+
 
 ### Halaman Buat Laporan
-Menampilkan halaman ketika pengguna memilih fitur buat laporan dengan menampilkan inputan nama lengkap, wilayah, layanan, foto, dan tanggal laporan.
+
 
 ### halaman Lihat Laporan
-Menampilkan halaman ketika pengguna memilih fitur lihat laporan yang sudah di buat sebelumnya
+
 
 
 
