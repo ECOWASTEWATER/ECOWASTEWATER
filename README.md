@@ -115,11 +115,12 @@ Package Main berfungsi sebagai pusat logika, yaitu tempat menyimpan semua class 
 
 ## Flowchart & Use Case
 
+### Flowchart
 
-## Flowchart
+<img width="4645" height="2872" alt="Keseluruhan drawio" src="https://github.com/user-attachments/assets/64582bed-fe5e-422e-978a-70c434e2dd17" />
 
 
-## Use Case
+### Use Case
 
 
 
