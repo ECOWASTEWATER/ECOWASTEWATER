@@ -5,9 +5,8 @@ Platfrom sanitasi ini digunakan untuk mempermudah masyarakat dalam melaporkan pe
 ## EcowasteWater 
 EcowasteWater merupakan patform yang berfungsi sebagai sistem digital untuk mempermudah pengelolaan sanitasi dan air limbah melalui pemantauan, pelaporan, dan penyimpanan data secara terpusat. Melalui platform ini, masyarakat dapat melaporkan permasalahan terkait fasilitas sanitasi atau air limbah dengan cepat, sementara pihak pengelola dapat langsung menerima laporan, memverifikasi kondisi di lapangan, dan menindaklanjutinya sesuai prioritas. Sistem ini juga menyimpan data inspeksi, kondisi instalasi, dan riwayat perawatan secara otomatis, sehingga proses evaluasi dan pengambilan keputusan menjadi lebih akurat dan efisien.
 
-## Fitur
 
-### OOP
+## OOP
 Object Oriented Programming (OOP) merupakan fondasi dalam pengembangan aplikasi karena memungkinkan proses pemrograman dilakukan dengan cara yang lebih terstruktur, terorganisir, dan mudah dikembangkan.
 
 
@@ -19,14 +18,14 @@ Object Oriented Programming (OOP) merupakan fondasi dalam pengembangan aplikasi 
 
 <img width="1284" height="503" alt="image" src="https://github.com/user-attachments/assets/cb07e466-b443-4ef7-bc99-f261b639b048" />
 
-Penggunakan Encapsulation pada program agar data penting (seperti assword, id, status laporan) tidak bisa diubah sembarangan dari luar kelas. Data hanya bisa diakses lewat method setter/getter.
+Penggunakan Encapsulation pada program agar data penting (seperti password, id, status laporan) tidak bisa diubah sembarangan dari luar kelas. Data hanya bisa diakses lewat method setter/getter.
 
 
 ### Abstraction
 
 <img width="940" height="339" alt="image" src="https://github.com/user-attachments/assets/c1d72304-f2b9-4a06-836f-fae82dfeb3f9" />
 
-Menyembunyikan detail teknis, hanya menampilkan fungsi yang penting agar sistem lebih mudah dipahami.
+Penggunaan abstraction yaitu untuk menyembunyikan detail teknis, hanya menampilkan fungsi yang penting agar sistem lebih mudah dipahami.
 
 
 ### Inheritance
@@ -120,7 +119,7 @@ Package Main berfungsi sebagai pusat logika, yaitu tempat menyimpan semua class 
 <img width="4645" height="2872" alt="Keseluruhan drawio" src="https://github.com/user-attachments/assets/64582bed-fe5e-422e-978a-70c434e2dd17" />
 
 
-### Logiin
+### Login
 <img width="687" height="1197" alt="Login drawio" src="https://github.com/user-attachments/assets/2ece9671-e149-46f7-b633-dcf7bbb0a996" />
 
 
@@ -142,9 +141,10 @@ Package Main berfungsi sebagai pusat logika, yaitu tempat menyimpan semua class 
 
 ### Use Case
 
+<img width="787" height="670" alt="use case drawio (1)" src="https://github.com/user-attachments/assets/bf7479e7-86e0-4dcc-9c83-4f7ae922aed6" />
 
 
-## grapgical User Interface (GUI)
+## graphical User Interface (GUI)
 
 ### Halaman Landing Page
 
