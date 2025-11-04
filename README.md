@@ -12,24 +12,24 @@ Object Oriented Programming (OOP) merupakan fondasi dalam pengembangan aplikasi 
 
 ### Encapsulation
 
-<img width="662" height="410" alt="image" src="https://github.com/user-attachments/assets/eddd1e02-4850-42b6-b1d3-38c7b0078874" />
-
 
 Penggunakan Encapsulation pada program agar data penting seperti atribut idUser, username, password, dll tidak bisa diubah sembarangan dari luar kelas. Data hanya bisa diakses lewat method setter/getter, dengan tujuan mencegah perubahan data langsung dari luar class (melindungi integritas data).
+
+<img width="662" height="410" alt="image" src="https://github.com/user-attachments/assets/eddd1e02-4850-42b6-b1d3-38c7b0078874" />
 
 
 ### Abstraction
 
-<img width="664" height="176" alt="image" src="https://github.com/user-attachments/assets/e3984697-96c6-4269-abde-d7d3c37335a8" />
-
 Penggunaan abstraction yaitu untuk menyembunyikan detail teknis, hanya menampilkan fungsi yang penting agar sistem lebih mudah dipahami, dan program lain cukup memanggil DatabaseConfig.getConnection() untuk dapat koneksi.
+
+<img width="664" height="176" alt="image" src="https://github.com/user-attachments/assets/e3984697-96c6-4269-abde-d7d3c37335a8" />
 
 
 ### Inheritance
 
-Class Admin dan Masyarakat menggunakan keyword extends UserBase, agar dapat menggunakan semua properti dan method dari UserBase tanpa menuliskannya ulang.
+penggunaan inheritance konseptual, seperti admin, Petugas, dan masyarakat mewarisi atribut dasar dari User (id_user, username, password, dll), dengan tujuan untuk menghindari duplikasi atribut dan menandakan semua role punya dasar yang sama dari User.
 
-<img width="959" height="556" alt="image" src="https://github.com/user-attachments/assets/a296b262-ac2a-4e14-a3a0-8683a60722f2" />
+<img width="973" height="333" alt="image" src="https://github.com/user-attachments/assets/8bcb898f-114c-4867-a364-d946c4842201" />
 
 
 ### Polymorphism
@@ -41,19 +41,21 @@ Class menggunakan polymorphism untuk mewarisi (inheritance) dari class induk, Ja
 
 ### Interface 
 
-<img width="1117" height="308" alt="image" src="https://github.com/user-attachments/assets/61e8ea46-d232-4c4d-8399-5d384cfed216" />
+Kode BaseDAO<T> merupakan interface dasar yang menentukan struktur umum untuk semua kelas Data Access Object (DAO) dalam sistem. Interface ini berisi deklarasi metode penting seperti insert, update, delete, getById, dan getAll, yang digunakan untuk mengelola data di database. 
 
-Digunakan pada class MasyarakatModel melalui deklarasi implements DatabaseOperation<MasyarakatModel> yang berfungsi sebagai kontrak yang menentukan setiap class yang mengimplementasikannya harus memiliki method insert(), update(), softDelete(), dan getAll().
+<img width="544" height="319" alt="image" src="https://github.com/user-attachments/assets/c6140a2e-7cb3-4f74-be0c-401225897f7d" />
+
 
 ## Packages
 Packages berfungsi mengelompokkan class dan file-file program lainnya ke dalam satu wadah atau folder tertentu. Dengan adanya package, struktur program menjadi lebih teratur, mudah dikelola, serta menghindari konflik nama class yang sama.
 
-<img width="426" height="245" alt="image" src="https://github.com/user-attachments/assets/d5c61a63-8618-45e4-b83b-3e93f7dd8feb" />
+<img width="191" height="158" alt="image" src="https://github.com/user-attachments/assets/d71d46c5-2081-4051-9f4a-5ecd97f78ce8" />
+
 
 ### Icon
 Package icon diguanakn untuk menyimpan file-file ikon atau gambar, dengan adanya package icon, file tidak akan bercampur dengan class java, sehingga struktur project lebih rapi dan terorganisir.
 
-<img width="386" height="546" alt="image" src="https://github.com/user-attachments/assets/11b02382-56b6-4ac6-99e8-1d69a958f1f5" />
+<img width="231" height="378" alt="image" src="https://github.com/user-attachments/assets/11e3201e-9ca9-4529-b442-5137ee41871d" />
 
 
 ### Koneksi
@@ -69,29 +71,29 @@ Package Main berfungsi sebagai pusat logika, yaitu tempat menyimpan semua class 
 
 
 ### File untuk Admin yang di awali huruf "A"
-* A_Edit_Status.java : Form/class untuk admin dalam mengedit status laporan air limbah.
-* A_Hapus_Laporan.java : Digunakan admin untuk menghapus laporan dari sistem.
-* A_Lihat_Laporan.java : Admin dapat melihat daftar laporan yang masuk.
-* A_Register_Petugas.java : Admin mendaftarkan akun petugas baru.
-* A_Welcome.java : Halaman sambutan / dashboard awal untuk admin.
-* A_update_data_petugas.java : Admin memperbarui data profil petugas.
+* A_Edit_Status.java 
+* A_Hapus_Laporan.java
+* A_Lihat_Laporan.java 
+* A_Register_Petugas.java
+* A_Welcome.java
+* A_update_data_petugas.java 
 
 ### File untuk Masyarakat yang di awali dengan huruf "M"
-* M_Buat_Laporan.java : Form untuk masyarakat membuat laporan masalah sanitasi/limbah.
-* M_Lihat_Laporan.java : Masyarakat dapat melihat status laporan yang pernah dikirim.
-* M_Welcome.java : Halaman sambutan / dashboard untuk masyarakat.
+* M_Buat_Laporan.java
+* M_Lihat_Laporan.java
+* M_Welcome.java 
 
 ### File untuk Petugas yang diawali huruf "P"
-* P_Edit_Status.java : Petugas mengubah status laporan (ditangani, selesai, dll.).
-* P_Lihat_Laporan.java : Petugas melihat daftar laporan yang harus ditangani.
-* P_Tindak_Lanjut.java : Form untuk mengisi tindakan lanjutan setelah menangani laporan.
-* P_Welcome.java : Dashboard/halaman awal petugas.
+* P_Edit_Status.java 
+* P_Lihat_Laporan.java
+* P_Tindak_Lanjut.java 
+* P_Welcome.java 
 
 ### Halaman Umum
-* Landing_Page.java : Tampilan awal aplikasi sebelum login.
-* Login.java : Form login untuk admin, petugas, dan masyarakat.
-* Register_Masyarakat.java : Halaman registrasi untuk masyarakat.
-* PA_SanitasiAirLimbah.java : Kemungkinan merupakan halaman utama yang menampilkan fitur aplikasi atau modul sanitasi (PA = Project Application / aplikasi utama).
+* Landing_Page.java
+* Login.java
+* Register_Masyarakat.java
+* PA_SanitasiAirLimbah.java 
 
 
 ## Dependencies, Java Dependencies, dan Project Files
@@ -116,22 +118,27 @@ Package Main berfungsi sebagai pusat logika, yaitu tempat menyimpan semua class 
 
 
 ### Login
+
 <img width="687" height="1197" alt="Login drawio" src="https://github.com/user-attachments/assets/2ece9671-e149-46f7-b633-dcf7bbb0a996" />
 
 
 ### Registrasi
+
 <img width="252" height="1503" alt="Regis drawio" src="https://github.com/user-attachments/assets/dd30bafe-112e-4c76-b07d-43172b8a14df" />
 
 
 ### Petugas
+
 <img width="888" height="1045" alt="Petugas drawio" src="https://github.com/user-attachments/assets/5eac6815-54cc-4865-8c56-3c96a1125824" />
 
 
 ### Masyarakat
+
 <img width="990" height="1242" alt="Masyarakat drawio" src="https://github.com/user-attachments/assets/bff1554d-7a48-49b1-9142-fe8e77d88f2a" />
 
 
 ### Admin
+
 <img width="1030" height="1838" alt="Admin drawio" src="https://github.com/user-attachments/assets/760e7434-0400-49cc-9364-262327a8dac9" />
 
 
@@ -140,61 +147,106 @@ Package Main berfungsi sebagai pusat logika, yaitu tempat menyimpan semua class 
 <img width="787" height="670" alt="use case drawio (1)" src="https://github.com/user-attachments/assets/bf7479e7-86e0-4dcc-9c83-4f7ae922aed6" />
 
 
-## graphical User Interface (GUI)
+## Graphical User Interface (GUI)
 
 ### Halaman Landing Page
 
+Halaman ini merupakan halaman ketika masuk ke sistem
+<img width="1195" height="667" alt="image" src="https://github.com/user-attachments/assets/638f39bf-c4fc-4a6e-9ba3-6eec756c0f9c" />
+
 
 ### Halaman Login 
+
+Halaman ini merupakan halaman ketika masuk ke sistem dan memilih login dengan role tertentu, dan registrasi masyarakat ketika belum memiliki akun.
+<img width="1190" height="661" alt="image" src="https://github.com/user-attachments/assets/0937feb3-933e-46d1-a710-4331380795bc" />
 
 
 ## Admin
 
 ### Halaman Wellcome 
 
+Halaman ini merupakaan halaman awal ketika login sebagai admin dengan fitur fitur tertentu
+<img width="1194" height="669" alt="image" src="https://github.com/user-attachments/assets/169498a2-0054-4bd7-a8a1-712d8bb4f7bd" />
+
+
 ### Halaman Lihat Laporan
+
+Halaman ini berisi seluruh laporan yang masuk dari masyarakat.
+<img width="1192" height="669" alt="image" src="https://github.com/user-attachments/assets/652f1d7e-3b6e-4a9f-98e3-460ced59757c" />
 
 
 ### Halaman Hapus laporan
 
+Halaman ini menampilkan seluruh laporan dan dapat menghapus laporan yang telah di tindaki.
+<img width="1197" height="670" alt="image" src="https://github.com/user-attachments/assets/bf3f536b-03c6-4009-ae77-8d4fc5df9e4d" />
 
-### halaman Registrasi Petugas
+
+### Halaman Registrasi Petugas
+
+Halaman ini merupakan halaman untuk registrasi akun petugas, dan hanya bisa diakses olah admin.
+<img width="1194" height="634" alt="image" src="https://github.com/user-attachments/assets/bd8b0ae2-52af-49f6-ae97-851d480ef12f" />
 
 
-### Hamana Ubah Status
+### Halaman Ubah Status
+
+Halaman ini menampilkan seluruh laporan dan admin dapat merubah status laporan seperti mengunngu atau selesai.
+<img width="1195" height="668" alt="image" src="https://github.com/user-attachments/assets/f6ee60aa-153e-417b-9589-0418d6af5cd2" />
+
+
+### Halaman lihat data petugas
+
+Halaman ini menampilkan seluruh data petugas
+<img width="1194" height="673" alt="image" src="https://github.com/user-attachments/assets/18e435b2-56d8-4bd4-b95f-067a36f5d18f" />
 
 
 ### Halaman Edit data Petugas
+
+Halaman ini menampilkan inputan data petugas dengan tujuan merubah data petugas yang sudah terdaftar sebelumnya.
+<img width="1193" height="665" alt="image" src="https://github.com/user-attachments/assets/491ca16b-8829-431a-b784-3a09aeed5a00" />
 
 
 ## Petugas
 
 ### Halaman Wellcome 
 
+Halaman ini menampilkan halaman awal ketika login sebagai petugas.
+<img width="1192" height="669" alt="image" src="https://github.com/user-attachments/assets/00074904-38c7-4d15-95be-350616578107" />
+
 
 ### Halaman Lihat Laporan
+
+halaman ini menampilkan seluruh laporan yang masuk dari masyarakat.
+<img width="1192" height="668" alt="image" src="https://github.com/user-attachments/assets/e00e43be-2cdd-4c92-9eef-28f0170bd87f" />
 
 
 ### Halaman Ubah Status
 
+Halaman ini menampilkan seluruh laporan masyarakart dan dapat merubah status laporan seprti menunggu, di proses, atau selesai.
+<img width="1193" height="668" alt="image" src="https://github.com/user-attachments/assets/8798a306-c6cd-4221-ba9d-d727f4ae49a3" />
 
-### halaman Tindak lanjut
 
+### Halaman Tindak lanjut
+
+Halaman ini menampilkan halaman tindak lanjut dari laporan seperti tanggal laporan, foto hasil tindakan, dan keterangan. 
+<img width="1195" height="670" alt="image" src="https://github.com/user-attachments/assets/9b621cab-aaa8-415d-9e47-53af171684bb" />
 
 
 ## Masyarakat
 
-### Halaman Registrasi Masyarakat
-
-
 ### Halaman Wellcome 
+
+Halaman ini menampilkan ketika login sebagai masyarakat
+<img width="1195" height="675" alt="image" src="https://github.com/user-attachments/assets/6b9e92f7-4761-41bf-8744-cf1dbd64dff9" />
 
 
 ### Halaman Buat Laporan
 
+Halaman ini menampilkan inputan untuk membuat laporan dari masyarakat
+<img width="1193" height="669" alt="image" src="https://github.com/user-attachments/assets/4158cf96-cca9-4cd9-a185-5c1f353f39a0" />
 
-### halaman Lihat Laporan
-
+### Halaman Lihat Laporan
+Halaman ini menampilkan hasil laporan yang telah di buat sebelumnya
+<img width="1195" height="680" alt="image" src="https://github.com/user-attachments/assets/0798d426-1bf1-4883-80c2-e6ec0e80c4f9" />
 
 
 
