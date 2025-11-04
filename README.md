@@ -12,20 +12,17 @@ Object Oriented Programming (OOP) merupakan fondasi dalam pengembangan aplikasi 
 
 ### Encapsulation
 
-<img width="972" height="156" alt="image" src="https://github.com/user-attachments/assets/a15650aa-4501-40b2-b165-2312896f2de8" />
+<img width="662" height="410" alt="image" src="https://github.com/user-attachments/assets/eddd1e02-4850-42b6-b1d3-38c7b0078874" />
 
-<img width="902" height="222" alt="image" src="https://github.com/user-attachments/assets/6626ae4e-a4e1-4f24-8056-a42d1fdf8a4b" />
 
-<img width="1284" height="503" alt="image" src="https://github.com/user-attachments/assets/cb07e466-b443-4ef7-bc99-f261b639b048" />
-
-Penggunakan Encapsulation pada program agar data penting (seperti password, id, status laporan) tidak bisa diubah sembarangan dari luar kelas. Data hanya bisa diakses lewat method setter/getter.
+Penggunakan Encapsulation pada program agar data penting seperti atribut idUser, username, password, dll tidak bisa diubah sembarangan dari luar kelas. Data hanya bisa diakses lewat method setter/getter, dengan tujuan mencegah perubahan data langsung dari luar class (melindungi integritas data).
 
 
 ### Abstraction
 
-<img width="940" height="339" alt="image" src="https://github.com/user-attachments/assets/c1d72304-f2b9-4a06-836f-fae82dfeb3f9" />
+<img width="664" height="176" alt="image" src="https://github.com/user-attachments/assets/e3984697-96c6-4269-abde-d7d3c37335a8" />
 
-Penggunaan abstraction yaitu untuk menyembunyikan detail teknis, hanya menampilkan fungsi yang penting agar sistem lebih mudah dipahami.
+Penggunaan abstraction yaitu untuk menyembunyikan detail teknis, hanya menampilkan fungsi yang penting agar sistem lebih mudah dipahami, dan program lain cukup memanggil DatabaseConfig.getConnection() untuk dapat koneksi.
 
 
 ### Inheritance
@@ -37,11 +34,9 @@ Class Admin dan Masyarakat menggunakan keyword extends UserBase, agar dapat meng
 
 ### Polymorphism
 
-Class menggunakan polymorphism untuk mewarisi (inheritance) dari class induk, menggunakan method yang sama dengan cara kerja berbeda pada setiap kelas turunan.
-
-<img width="974" height="125" alt="image" src="https://github.com/user-attachments/assets/42ea0c20-33a8-4b8f-9359-153da8277403" />
-
-<img width="1004" height="129" alt="image" src="https://github.com/user-attachments/assets/701af4cb-ba93-4903-80fa-cd9878e03ee7" />
+Class menggunakan polymorphism untuk mewarisi (inheritance) dari class induk, Jadi ini adalah bentuk polymorphism. Satu method dengan nama sama (validateLogin) tapi hasilnya berbeda tergantung role (admin/petugas/masyarakat).
+ 
+<img width="980" height="335" alt="image" src="https://github.com/user-attachments/assets/42b8f500-f0a2-40f7-b9c6-3610cb064b51" />
 
 
 ### Interface 
@@ -64,13 +59,14 @@ Package icon diguanakn untuk menyimpan file-file ikon atau gambar, dengan adanya
 ### Koneksi
 Package koneksi berfungsi untuk tempat mengelola semua file yang berkaitan dengan koneksi ke database. Terdapat dua file yaitu DatabaseConfig.java yang berfungsi untuk menghubungkan aplikasi ke database seperti MySQL. Kemudian ada file TesKoneksi.java yang berfungsi untuk memastikan bahwa database dapat di akses sebelum aplikasi di gunakan.
 
-<img width="380" height="381" alt="image" src="https://github.com/user-attachments/assets/5924e652-60fa-470d-a0d3-0853c4244dac" />
+<img width="240" height="275" alt="image" src="https://github.com/user-attachments/assets/b02539b8-2b06-4284-85bb-65c001c7b4f8" />
 
 
 ### Main
 Package Main berfungsi sebagai pusat logika, yaitu tempat menyimpan semua class yang terkait dengan proses uatama atau tampilan program.
 
-<img width="385" height="517" alt="image" src="https://github.com/user-attachments/assets/e30e2dd8-5ca0-4237-8ad5-b0e1964c4a1b" />
+<img width="229" height="362" alt="image" src="https://github.com/user-attachments/assets/af1eddf8-e6e5-4180-a6a4-7a361b36c31c" />
+
 
 ### File untuk Admin yang di awali huruf "A"
 * A_Edit_Status.java : Form/class untuk admin dalam mengedit status laporan air limbah.
